@@ -6,7 +6,7 @@ float hitung_bmi(float berat, float tinggi){
     return berat / (tinggi * tinggi);
 }
 
-void input_data(float berat, float tinggi){
+void input_data(float &berat, float &tinggi){
     cout << "Masukkan berat badan (Kg) = ";
     cin >> berat;
     cout << "Masukkan tinggi badan (m) = ";
@@ -27,5 +27,8 @@ string status_bmi(float bmi){
 int main(){
     float berat, tinggi, bmi;
     input_data(berat, tinggi);
+    bmi = hitung_bmi(berat, tinggi);    //itung bmi
     
+    cout << "Nilai BMI = " << bmi << endl; //menampilkan output
+    cout << "Kondisi = " << status_bmi(bmi) << endl;
 }
