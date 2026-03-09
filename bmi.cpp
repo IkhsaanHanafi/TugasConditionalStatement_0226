@@ -26,4 +26,6 @@ string status_bmi(float bmi){
 
 int main(){
     float berat, tinggi, bmi;
+    input_data(berat, tinggi);
+    
 }
