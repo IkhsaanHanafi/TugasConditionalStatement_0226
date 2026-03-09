@@ -23,3 +23,7 @@ string status_bmi(float bmi){
     else
         return "Obesitas";
 }
+
+int main(){
+    float berat, tinggi, bmi;
+}
